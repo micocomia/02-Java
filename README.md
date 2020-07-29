@@ -1,5 +1,5 @@
 # Coursera_Java
-My source codes for the following courses by Duke University course in Coursera:
+My source codes for the following courses in Coursera:
 
-1) Java Programming: Solving Problems with Software
-2) Java Programming: Arrays, Lists, and Structured Data
+1) Java Programming: Solving Problems with Software (Duke University)
+2) Java Programming: Arrays, Lists, and Structured Data (Duke University)
