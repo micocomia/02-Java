@@ -1,0 +1,14 @@
+// write your code here
+var image = new SimpleImage("dinos.png");
+
+ for (var pixel of image.values()){
+    var average = (pixel.getRed()+pixel.getGreen()+pixel.getBlue)/3;
+   
+    pixel.setRed(average);
+    pixel.setGreen(average);
+    pixel.setBlue(average);
+  }
+  
+  var canvas = document.getElementById("cv");
+  canvas.clearRect(0,0,canvas.width,canvas.height);
+  image.drawTo(canvas);

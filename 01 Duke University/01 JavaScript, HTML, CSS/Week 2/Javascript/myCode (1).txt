@@ -1,0 +1,59 @@
+// Part 1 
+print("Part 1");
+
+// Initialize Images
+var hilton = new SimpleImage("hilton.jpg");
+var width = hilton.getWidth();
+
+for (var pixel of hilton.values()){
+    if (pixel.getX() < (width/3)){
+        pixel.setRed(255);
+    } else if ((pixel.getX() > width/3) && (pixel.getX() < ((width*2)/3))){
+        pixel.setGreen(255);
+    }else{
+        pixel.setBlue(255);
+    }
+}
+
+print(hilton);
+
+// Part 2
+print("Part 2");
+
+// Function
+function swapRedGreen(pixel){
+   var s1 = pixel.getRed();
+   var s2 = pixel.getGreen();
+   
+   pixel.setRed(s2);
+   pixel.setGreen(s1);
+}
+
+var eggs = new SimpleImage("eastereggs.jpg");
+
+// Loop
+for (var pixel of eggs.values()){
+    swapRedGreen(pixel);
+}
+
+print(eggs);
+
+// Part 3
+print("Part 3");
+
+var devil = new SimpleImage("duke_blue_devil.png");
+var white = devil.getPixel(0,0);
+var x = 0;
+var y = 0;
+
+for (var pixel of devil.values()){
+    if (pixel == white){
+        
+    }else{
+        pixel.setRed(255);
+        pixel.setGreen(255);
+        pixel.setBlue(0);
+    }
+}
+
+print(devil);

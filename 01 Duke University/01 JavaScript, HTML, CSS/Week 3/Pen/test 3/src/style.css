@@ -1,0 +1,24 @@
+h1 {
+  font-family: arial;
+   width: 200px;
+  font-size: 30px;
+}
+
+div {
+  font-family: arial;
+  width: 200px;
+  font-size: 20px;
+}
+
+.bluebg{
+  background-color: lightblue;
+}
+
+.yellowbg{
+  background-color: lightyellow;
+}
+
+.whitebg{
+  background-color: white;
+}
+

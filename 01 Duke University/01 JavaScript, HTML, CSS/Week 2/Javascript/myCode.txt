@@ -1,0 +1,40 @@
+// Part 1 
+print("Part 1");
+
+// Initialize Images
+var hilton = new SimpleImage("hilton.jpg");
+var width = hilton.getWidth();
+
+for (var pixel of hilton.values()){
+    if (pixel.getX() < (width/3)){
+        pixel.setRed(255);
+    } else if ((pixel.getX() > width/3) && (pixel.getX() < ((width*2)/3))){
+        pixel.setGreen(255);
+    }else{
+        pixel.setBlue(255);
+    }
+}
+
+print(hilton);
+
+// Part 2
+print("Part 2");
+
+// Function
+function swapRedGreen(pixel1){
+   var s1 = pixel1.getRed;
+   var s2 = pixel1.getGreen;
+   
+   pixel1.setRed(s2);
+   pixel1.setGreen(s1);
+   
+   return pixel1;
+}
+
+var flower = new SimpleImage("hippieflower.jpg");
+
+for (var pixel of flower.values()){
+    swapRedGreen(pixel);
+}
+
+print(flower);
